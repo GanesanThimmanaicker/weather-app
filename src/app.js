@@ -3,6 +3,8 @@ const express = require('express')
 const hbs = require('hbs')
 const geocode = require('./geocode')
 
+const port = process.env.PORT || 3000
+
 const app = express()
 
 //Getting path values
@@ -109,6 +111,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log("Web server is up and running")
+app.listen(port, () => {
+    console.log("Web server is up and running "+ port)
 })
