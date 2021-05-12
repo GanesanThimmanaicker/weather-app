@@ -1,4 +1,3 @@
-console.log("Load the javascript file")
 // const locationfn = (location) => {
 //     fetch('http://localhost:3000/weather?address=' + location).then((response) => {
 //         response.json().then((data) => {
